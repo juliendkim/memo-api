@@ -1,0 +1,25 @@
+###
+GET http://localhost:3000/memos
+###
+GET http://localhost:3000/memos/4
+
+###
+POST http://localhost:3000/memos
+Content-Type: application/json
+
+{
+    "title": "제목",
+    "content": "내용"
+}
+
+###
+PUT http://localhost:3000/memos/3
+Content-Type: application/json
+
+{
+    "title": "수정된 제목",
+    "content": "수정된 내용"
+}
+
+###
+DELETE http://localhost:3000/memos
