@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
     var qry = "select * from memos";
     try {
         const result = await pool.query(qry);
-        res.send({success: true,data: result.rows});
+        res.send({success: true,items: result.rows});
     } catch(err) {
         res.send({success: false,message: err.message});
     }

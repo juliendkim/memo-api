@@ -1,20 +1,20 @@
 ###
-GET http://localhost:3000/memos
+GET http://localhost:3001/memos
 ###
-GET http://localhost:3000/memos/5
+GET http://localhost:3001/memos/5
 
 ###
-POST http://localhost:3000/memos
+POST http://localhost:3001/memos
 Content-Type: application/json
 
 {
-    "id": 5,
-    "title": "제목5",
-    "content": "내용5"
+    "id": 6,
+    "title": "제목6",
+    "content": "내용6"
 }
 
 ###
-PUT http://localhost:3000/memos/5
+PUT http://localhost:3001/memos/5
 Content-Type: application/json
 
 {
@@ -23,4 +23,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/memos/5
+DELETE http://localhost:3001/memos/5
